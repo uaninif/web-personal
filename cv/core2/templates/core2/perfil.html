@@ -1,0 +1,29 @@
+{% extends 'core2/base.html' %}
+
+{% block background %}{% load static %}{% static 'core2/img/33.bmp' %}{% endblock %}
+
+{% block title %}Perfil{% endblock %}
+
+{% block headers %}
+<h1>PERFIL</h1>
+<span class="subheading">Uanini, Federico Daniel | Ingeniero Civil</span>
+
+{% endblock %}
+
+{% block content %}
+<div class="col-lg-9 col-md-8">
+    <div align = "justify" > 
+        <br>
+        <h4> Profesional con más de 7 años de desarrollo en distintas áreas de la
+        ingeniería civil, desde la investigación científica, al proyecto, cálculo y ejecución de importantes obras civiles, industriales y sanitarias. <h2>      
+        <h1> Soluciones integrales para su proyecto </h1> 
+        <h3> Desde el proyecto y modelado 3D, al cálculo y la ejecución  </h3> 
+    </div>
+</div>
+
+<div class="col-lg-2 col-md-10 mx-auto">
+        <img class="img-fluid avatar" src="{% static 'core2/img/5contacto.png' %}" alt="">
+</div>
+
+
+{% endblock %}

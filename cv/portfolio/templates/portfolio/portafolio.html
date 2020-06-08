@@ -1,0 +1,24 @@
+{% extends 'core2/base.html' %}
+
+{% block background %}{% load static %}{% static 'core2/img/4.bmp' %}{% endblock %}
+
+{% block title %}Antescedentes Laborales{% endblock %}
+
+{% block headers %}
+<h1>EXPERIENCIA LABORAL</h1>
+<span class="subheading">Uanini, Federico Daniel | Ingeniero Civil</span>
+{% endblock %}
+
+{% block content %}
+        {% for project in projects %}
+                <div class="row project">               
+                        <div class="col-lg-3 col-md-4 offset-lg-1">
+                                <img class="img-fluid" src="{{project.image.url}}" alt="">
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                                <h3 class="section-heading title">{{project.title}}</h3>
+                                <p>{{project.description}}</p>
+                        </div>
+                </div>
+        {% endfor %}
+{% endblock %}
